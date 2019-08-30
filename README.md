@@ -15,3 +15,12 @@
 - Download a visual interface to see the data in Postgres (I like https://electronjs.org/apps/postbird)
 - To stop the container, just run: "docker stop postgres"
 - To run again the container, just run : "docker start postgres"
+
+## Setup
+
+#### EsLint / Prettier:
+
+- The file .eslintrc.js has some configurations using AirBnB style and prettier
+- The Line-break mode is configured for Windows
+- The file .prettierrc is needed because eslint and prettier conflicts in some cases (for example single quote)
+- To avoid opening one by one .js files and saving to let eslint fix with the rules, just run the command: "yarn eslint --fix src --ext .js"
